@@ -132,7 +132,7 @@ Pasos de construcción de sistema difuso:
 
          Salida: tiempo de cocción - términos (corto, medio, largo) -> TC,TM,TL
 
-    3. Construcción de funciones de pertenencia
+3. Construcción de funciones de pertenencia
         A cada término lingüístico se le asigna una función de pertenencia (que pueden ser triangular, trapezoidal...).
         Estas funciones permiten representar los grados de pertenencia difusos (entre 0 y 1).
 
@@ -149,7 +149,7 @@ Pasos de construcción de sistema difuso:
 
   (Se activarán aquellos términos del antecedente de cada regla que, en función de las variables de entrada, hayan sido atravesados por la línea vertical que representa el valor de la variable de entrada).
 
-    Si en el consecuente de la regla hay conflicto por tener términos linguisticos activos repetidos y con distinto nivel de activación, se aplica la t-conorma para decidir el nivel de  activación.
+   Si en el consecuente de la regla hay conflicto por tener términos linguisticos activos repetidos y con distinto nivel de activación, se aplica la t-conorma para decidir el nivel de  activación.
 
      
 6. Nitidificación

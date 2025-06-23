@@ -1,6 +1,3 @@
-# resumenIA
-Resumen del temario de IA de la UOC
-
 IA - Resumen del temario de la UOC.
 ===================================
 

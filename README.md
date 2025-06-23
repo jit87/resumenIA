@@ -5,9 +5,9 @@ TEMA 1 - Resolución de problemas y búsqueda
 ----------------------------------------------------------
 Coste del recorrido: se calcula sumando el coste de las aristas.
 
-<b>Búsqueda uniforme</b>: tiene en cuenta el coste de las aristas. Es completa y óptima cuando la función del coste siempre es positiva.
+Búsqueda uniforme: tiene en cuenta el coste de las aristas. Es completa y óptima cuando la función del coste siempre es positiva.
 
-<b>Búsqueda ávida</b>: tiene solo en cuenta el heurístico.
+Búsqueda ávida: tiene solo en cuenta el heurístico.
 
 Búsqueda A*: tiene en cuenta el coste y el heurístico. Es decir, cada nodo es   [(u, C + H)]. Donde C es la suma acumulada de las aristas hasta llegar al nodo u, y H es H(u). 
 El coste del recorrido se calculará igual que en los otros métodos. La solución será óptima si el heurístico es admisible, si no es admisible el algoritmo A* no garantiza que encontremos el óptimo. 

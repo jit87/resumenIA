@@ -5,14 +5,14 @@ TEMA 1 - Resolución de problemas y búsqueda
 ----------------------------------------------------------
 Coste del recorrido: se calcula sumando el coste de las aristas.
 
-Búsqueda uniforme: tiene en cuenta el coste de las aristas. Es completa y óptima cuando la función del coste siempre es positiva.
+<b>Búsqueda uniforme</b>: tiene en cuenta el coste de las aristas. Es completa y óptima cuando la función del coste siempre es positiva.
 
-Búsqueda ávida: tiene solo en cuenta el heurístico.
+<b>Búsqueda ávida</b>: tiene solo en cuenta el heurístico.
 
 Búsqueda A*: tiene en cuenta el coste y el heurístico. Es decir, cada nodo es   [(u, C + H)]. Donde C es la suma acumulada de las aristas hasta llegar al nodo u, y H es H(u). 
 El coste del recorrido se calculará igual que en los otros métodos. La solución será óptima si el heurístico es admisible, si no es admisible el algoritmo A* no garantiza que encontremos el óptimo. 
 
-Admisibilidad: Dicho de la función heurística que es admisible si nunca sobrestima el coste real,  es decir no sobreestima el coste de alcanzar la meta desde ningún nodo. 
+Admisibilidad: dicho de la función heurística que es admisible si nunca sobrestima el coste real,  es decir no sobreestima el coste de alcanzar la meta desde ningún nodo. 
 Un heurístico admisible puede ser consistente o no.  Si se sobreestima algún óptimo es no admisible.
 
 Consistencia: para que h sea consistente tiene que ser primero admisible. Un heurístico de un grafo es consistente si es un heurístico admisible con la
@@ -20,13 +20,13 @@ Consistencia: para que h sea consistente tiene que ser primero admisible. Un heu
  y) corresponde a ir de x a y. Si no da ningún rodeo es consistente el heurístico, es decir no replantea el camino más corto hacia ningún vértice.
 
 Diferencias entre A* completo y A* simplificado:
--  A* completo:  Cuando consideramos los sucesores del nodo actual, si encontramos uno que ya está en el conjunto de cerrados, calculamos su coste
+-  A* completo:  cuando consideramos los sucesores del nodo actual, si encontramos uno que ya está en el conjunto de cerrados, calculamos su coste
  y si mejora el coste que tenía cuando lo cerramos, sacamos el sucesor del conjunto de cerrados y lo volvemos a situar en el conjunto de abiertos con
  el coste revisado. Por tanto:
        Revisa y actualiza el coste de los nodos ya visitados si encuentra un camino mejor (de menor coste).
        Por tanto, reexplora nodos si es necesario para encontrar el camino realmente óptimo.
        Tiene un mayor coste computacional, pero garantiza la solución más corta si h(n) es admisible.
--  A* simplificado: Cuando consideramos los sucesores del nodo actual, si encontramos uno que ya está en el conjunto de cerrados, lo ignoramos.
+-  A* simplificado: cuando consideramos los sucesores del nodo actual, si encontramos uno que ya está en el conjunto de cerrados, lo ignoramos.
    El A* simplificado solo funciona bien si el heurístico es consistente.
 	No actualiza los costes de nodos que ya han sido visitados (cerrados).
 	Por tanto, no reexplora nodos aunque exista un camino mejor.

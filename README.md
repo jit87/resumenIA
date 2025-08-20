@@ -178,16 +178,14 @@ Construcción de un árbol de decisión:
  Una vez construido, el árbol se usa para clasificar nuevos ejemplos. El proceso consiste en recorrer el árbol desde la raíz, siguiendo las ramas   correspondientes a los valores del ejemplo hasta llegar a un nodo terminal, que contiene la clase predicha.
 
 
-K-means (k-medias): es un algoritmo de agrupamiento (no supervisado) que divide los datos en varios clústeres o grupos, de modo que cada dato se incluye en el grupo cuyo centroide (centro, media de los datos del grupo) es más cercano. Es un algoritmo de aprendizaje no supervisado.  k será el número de agrupamientos.   En esencia, el algoritmo es el siguiente:
- 1) Elegir k puntos al azar como centroides iniciales. No necesariamente tienen
- que pertenecer al conjunto de datos, aunque sus coordenadas tienen que estar
- en el mismo intervalo.
- 2) Asignar cada punto del conjunto de datos al centroide más cercano y formar
- así k grupos.
- 3) Recalcular los nuevos centroides de los k grupos, que estarán en el centro
- geométrico del conjunto de puntos del grupo.
- 4) Volver al paso 2 hasta que las asignaciones a grupos no varíen o se hayan
- superado las iteraciones previstas
+K-means (k-medias): es un método de clustering (agrupamiento no supervisado) que organiza un conjunto de datos en k grupos o clústeres. Cada observación se asigna al grupo cuyo centroide (es decir, el punto medio o promedio de los datos de ese grupo) se encuentra más próximo. El valor de k determina la cantidad de agrupamientos que se crearán.
+
+El procedimiento básico del algoritmo es el siguiente:
+
+- Seleccionar al azar k centroides iniciales. Estos no tienen que ser necesariamente datos reales, pero sus coordenadas deben estar dentro del rango de los valores.
+- Asignar cada elemento del conjunto de datos al centroide más cercano, generando así k grupos.
+- Calcular nuevamente los centroides de cada grupo, ubicándolos en la posición promedio de los puntos que lo conforman.
+- Repetir los pasos 2 y 3 hasta que las asignaciones de los puntos ya no cambien o hasta alcanzar el número máximo de iteraciones establecido.
 
 
 KNN (k Nearest Neighbors): es un algoritmo de aprendizaje supervisado que clasifica los datos en diferentes clases en función de la distancia. Es decir, para cada dato nuevo se mide la distancia con respecto a los datos anteriores y se asignará a aquella clase del dato que se encuentre a menos distancia.  K será, en este caso, el número de vecinos cercanos que queremos comprobar para ubicar el dato.

@@ -109,7 +109,7 @@ siendo a el extremo inferior y b el extremo superior del intervalo (c,d).
 Los tramos decrecientes serán: 
 f(x) = d - x / d - c 
 
-Inferencia.
+Sistemas de inferencia:
  - T-conorma: para operadores OR
  - T-norma: para operadores AND
 Cuando varias reglas apuntan al mismo término, el conflicto se resuelve con la T-conorma (porque es como una serie de conectores OR)

@@ -119,11 +119,11 @@ Nitidificación:  consiste en obtener un valor nítido a partir de un conjunto d
 
 Pasos de construcción de sistema difuso:
 
-   1. Identificación del problema
-   	   Se plantea un problema con incertidumbre.
+   1. Identificación del problema:
+   	   se plantea un problema con incertidumbre.
 	   Caso: Cocinar una carne según grosor y nivel de cocción deseado, queremos saber el tiempo de cocción necesario.
 
-   2. Definición de variables lingüísticas
+   2. Definición de variables lingüísticas:
     Se determinan las variables de entrada y salida con sus respectivos términos lingüísticos.
 
          Entrada 1: grosor de la carne  - términos (fina, media, gruesa) ->  F,M,G
@@ -132,16 +132,16 @@ Pasos de construcción de sistema difuso:
 
          Salida: tiempo de cocción - términos (corto, medio, largo) -> TC,TM,TL
 
-3. Construcción de funciones de pertenencia
-   A cada término lingüístico se le asigna una función de pertenencia (que pueden ser triangular, trapezoidal...).
+3. Construcción de funciones de pertenencia:
+   a cada término lingüístico se le asigna una función de pertenencia (que pueden ser triangular, trapezoidal...).
    Estas funciones permiten representar los grados de pertenencia difusos (entre 0 y 1).
 
-4. Formulación de reglas difusas
-   Se emplean reglas lógicas como: Si grosor de carne es "fino" y nivel de cocción es "poco hecho", entonces tiempo es "corto". Esto se formaliza del siguiente modo:
+4. Formulación de reglas difusas:
+   se emplean reglas lógicas como: Si grosor de carne es "fino" y nivel de cocción es "poco hecho", entonces tiempo es "corto". Esto se formaliza del siguiente modo:
       F ^ PH -> TC
 
-5. Inferencia difusa
-   Se aplican las reglas al caso real y se calcula el grado de activación de cada regla mediante  operadores lógicos:
+5. Inferencia difusa:
+   se aplican las reglas al caso real y se calcula el grado de activación de cada regla mediante  operadores lógicos:
 
      AND : T-norma
 
@@ -152,8 +152,8 @@ Pasos de construcción de sistema difuso:
       Si en el consecuente de la regla hay conflicto por tener términos linguisticos activos repetidos y con distinto nivel de activación, se aplica la t-conorma para decidir el nivel de  activación.
 
      
-6. Nitidificación
-    Primero se combinan todas las salidas difusas de las reglas activadas. Lo que nos arroja un conjunto de áreas bajo curvas, delimitadas por los niveles de activación finales. 
+6. Nitidificación:
+    primero se combinan todas las salidas difusas de las reglas activadas. Lo que nos arroja un conjunto de áreas bajo curvas, delimitadas por los niveles de activación finales. 
 
     Con la nitidificación se transforma el resultado difuso en un valor numérico único.
 

@@ -133,15 +133,15 @@ Pasos de construcción de sistema difuso:
          Salida: tiempo de cocción - términos (corto, medio, largo) -> TC,TM,TL
 
 3. Construcción de funciones de pertenencia
-        A cada término lingüístico se le asigna una función de pertenencia (que pueden ser triangular, trapezoidal...).
-        Estas funciones permiten representar los grados de pertenencia difusos (entre 0 y 1).
+   A cada término lingüístico se le asigna una función de pertenencia (que pueden ser triangular, trapezoidal...).
+   Estas funciones permiten representar los grados de pertenencia difusos (entre 0 y 1).
 
-    4. Formulación de reglas difusas
-         Se emplean reglas lógicas como: Si grosor de carne es "fino" y nivel de cocción es "poco hecho", entonces tiempo es "corto". Esto se formaliza del siguiente modo:
-         F ^ PH -> TC
+4. Formulación de reglas difusas
+   Se emplean reglas lógicas como: Si grosor de carne es "fino" y nivel de cocción es "poco hecho", entonces tiempo es "corto". Esto se formaliza del siguiente modo:
+      F ^ PH -> TC
 
-    5. Inferencia difusa
-    Se aplican las reglas al caso real y se calcula el grado de activación de cada regla mediante  operadores lógicos:
+5. Inferencia difusa
+   Se aplican las reglas al caso real y se calcula el grado de activación de cada regla mediante  operadores lógicos:
 
      AND : T-norma
 

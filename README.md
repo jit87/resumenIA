@@ -147,9 +147,9 @@ Pasos de construcción de sistema difuso:
 
      OR : T-conorma
 
-  (Se activarán aquellos términos del antecedente de cada regla que, en función de las variables de entrada, hayan sido atravesados por la línea vertical que representa el valor de la variable de entrada).
+     (Se activarán aquellos términos del antecedente de cada regla que, en función de las variables de entrada, hayan sido atravesados por la línea vertical que representa el valor de la variable de entrada).
 
-   Si en el consecuente de la regla hay conflicto por tener términos linguisticos activos repetidos y con distinto nivel de activación, se aplica la t-conorma para decidir el nivel de  activación.
+      Si en el consecuente de la regla hay conflicto por tener términos linguisticos activos repetidos y con distinto nivel de activación, se aplica la t-conorma para decidir el nivel de  activación.
 
      
 6. Nitidificación

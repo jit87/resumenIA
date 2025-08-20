@@ -195,10 +195,10 @@ KNN (k Nearest Neighbors): es un algoritmo de aprendizaje supervisado que clasif
 
 Red neuronal:  es un método de aprendizaje computacional supervisado que se basa en una estructura de nodos interconectada a través de aristas que representan operaciones que se realizan sobre las salidas de los nodos. Emula el comportamiento de las neuronas biológicas. Los nodos reciben unas señales y las trasmiten a otros nodos, en esa transmisión se realizan operaciones que activan o no el siguiente nodo. 
 se compone de los elementos siguientes:
- • Una capa de unidades de entrada, que reciben las variables disponibles del exterior para tratar el problema.
- • Una capa de unidades de salida, compuesta por una o más unidades que producen una salida al exterior, que es el «resultado» de la red.
- • Una capa de unidades ocultas, que reciben conexiones de la capa de entrada y se conectan a las unidades de salida.
- • Finalmente, el conjunto de conexiones entre capas. En general, las conexiones entre las unidades son unidireccionales.
+ - Una capa de unidades de entrada, que reciben las variables disponibles del exterior para tratar el problema.
+ - Una capa de unidades de salida, compuesta por una o más unidades que producen una salida al exterior, que es el «resultado» de la red.
+ - Una capa de unidades ocultas, que reciben conexiones de la capa de entrada y se conectan a las unidades de salida.
+ - Finalmente, el conjunto de conexiones entre capas. En general, las conexiones entre las unidades son unidireccionales.
 
 Funcion de activación: es una función matemática que determina el cálculo/operación que hace una capa intermediaria de la red neuronal de modo que la salida de esa capa sea una modificación de la señal de entrada.
 ReLU por ejemplo es una función de activación, que opera sobre la entrada para que la salida muestre solo numeros positivos. 
